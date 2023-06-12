@@ -1,3 +1,51 @@
+/* CUSTOM PROPS */
+:root{
+  --text-color: #111517;
+  --body-bg:#fafafa;
+  --element-bg:#fff;
+
+}
+
+/* FONTS  */
+
+@font-face {
+  font-family: "Nunito Sans 10pt";
+  src: url("../fonts/NunitoSans10pt-SemiBold.woff2") format("woff2"),
+  url("../fonts/NunitoSans10pt-SemiBold.woff2NunitoSans10pt-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans 10pt";
+  src: url("../fonts/NunitoSans10pt-SemiBold.woff2NunitoSans10pt-ExtraBold.woff2") format("woff2"),
+  url("../fonts/NunitoSans10pt-SemiBold.woff2NunitoSans10pt-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans 10pt";
+  src: url("../fonts/NunitoSans10pt-SemiBold.woff2NunitoSans10pt-Regular.woff2") format("woff2"),
+  url("../fonts/NunitoSans10pt-SemiBold.woff2NunitoSans10pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans 10pt";
+  src: url("../fonts/NunitoSans10pt-SemiBold.woff2NunitoSans10pt-ExtraLight.woff2") format("woff2"),
+  url("../fonts/NunitoSans10pt-SemiBold.woff2NunitoSans10pt-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +65,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Nunito Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color:var(--body-bg);
+  color:var(--text-color);
 }
 
 img {
@@ -29,44 +77,18 @@ img {
   height: auto;
 }
 
-
-/* AUTOFILL-STYLES */
-/*input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border-color: transparent;
-  -webkit-text-fill-color: inherit;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-}*/
-
-
-/* PLACEHOLDER-STYLES */
-/*::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
-  color: rgba(52, 49, 61, 0.5);
-  opacity: 1;
-}*/
-
-
-/* VISUALLY-HIDDEN */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+a{
+  text-decoration: none;
 }
+/* DARK MODE */
+.dark-mode{
+  --element-bg:#2b3844;
+  --body-bg:#202c36;
+  --text-color:#fff;
+}
+
+
+
 
 
 /* CONTAINER */
